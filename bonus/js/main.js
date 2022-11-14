@@ -56,4 +56,6 @@ console.log(arrayList);
         ulList.innerHTML += `<li>${newElement}</li>`;
 
         console.log(newElement + " è un nuovo elemento alla lista");
+
+        altroelemento.value = "";
     });

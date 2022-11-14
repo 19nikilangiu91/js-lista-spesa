@@ -1,5 +1,5 @@
 // Andiamo a creare il nostro "arrayList"
-let arrayList = [];
+let arrayList =[];
 
 console.log(arrayList);
 // Andiamo a creare il nostro "containerList".
@@ -23,12 +23,12 @@ myButton.addEventListener("click",
 
     function(){
 
-        let newElelement = document.getElementById("nuovoelemento").value;
-        arrayList.push(newElelement);
+        let newElement = document.getElementById("nuovoelemento").value;
+        arrayList.push(newElement);
     
         // Creo un ciclo "for".
 
-        for (let i = 0; i < arrayList.length; i++){
+        for (let i = 0; i <= arrayList.length; i++){
 
         // Andiamo a creare la varibile "element".
         let elementI = arrayList[i];

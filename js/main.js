@@ -1,32 +1,26 @@
 // Andiamo a creare il nostro "arrayList"
 let arrayList = [ "Insalata", "Pomodori", "Cetrioli", "Zucchine", "Melanzana"];
 
+// Colleghiamo la nostra lista "ul"
+let ulList = document.getElementById("ul-list");
+
+
 console.log(arrayList);
 
 // Andiamo a creare il ciclo "for"
 
-// for (let i = 0; i < arrayList.length; i++){
+    // for (let i = 0; i < arrayList.length; i++){
 
-//     // Andiamo a creare la varibile "element".
+    //     // Andiamo a creare la varibile "element".
+    //     let elementI = arrayList[i];
+    //     // console.log(elementI);
 
-//     let elementI = arrayList[i];
-//     // console.log(elementI);
+    //     // Andiamo ad inserire e stampare i "li" dentro la lista "ul".
+    //     ulList.innerHTML += `<li>${elementI}</li>`;
 
-//     // Colleghiamo la nostra lista "ul"
+    //     console.log("sull'interazione " + i + " risulta l'elemento " + elementI);
 
-//     let ulList = document.getElementById("ul-list");
-
-//     // Andiamo a creare i "li".
-
-//     let liElement = document.createElement("li");
-//     liElement.append(elementI);
-
-//     // Andiamo ad inserire i "li" a "ul".
-//     ulList.append(liElement);
-
-//     console.log("sull'interazione " + i + " risulta l'elemento " + elementI);
-
-// }
+    // };
 
 // Andiamo a creare il ciclo "while".
 
@@ -34,29 +28,12 @@ console.log(arrayList);
 
     while(i < arrayList.length){
 
+        // Andiamo a creare una variabile per inserire la nostra "arrayList".
         let elementI = arrayList[i];
         // console.log(elementI);
-
-        // Colleghia la nostra lista "ul"
-
-        let ulList = document.getElementById("ul-list");
-
-        // Andiamo a creare i "li".
-        let liElement = document.createElement("li");
-        liElement.append(elementI);
         
-        // Andiamo ad inserire i "li" a "ul".
-        ulList.append(liElement);
+        // Andiamo ad inserire e stampare i "li" dentro la lista "ul".
+        ulList.innerHTML += `<li>${elementI}</li>`;
         
-        console.log("sull'interazione " + i + " risulta l'elemento " + elementI);
-
-        i++
-    }
-
-
-        
-
-
-
-
-
+        i++;
+    };
